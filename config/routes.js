@@ -3,4 +3,6 @@ const root = require("../controllers/root.js")
 module.exports = function(app){
 
   app.get('/', root.index);
+  app.post('/add', root.add)
+  app.post('/edit/:id', root.edit)
 }

@@ -7,7 +7,7 @@ exports.up = function (knex, Promise) {
         table.integer('item_price');
         table.boolean('price_negotiable')
             .defaultTo('false');
-        table.string('img_url')
+        table.text('img_url')
         table.integer('user_id')
             .notNullable()
             .references('id')
