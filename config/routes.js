@@ -5,4 +5,5 @@ module.exports = function(app){
   app.get('/', root.index);
   app.post('/add', root.add)
   app.post('/edit/:id', root.edit)
+  app.post('/delete/:id', root.delete)
 }

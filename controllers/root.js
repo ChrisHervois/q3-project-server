@@ -29,4 +29,11 @@ module.exports = {
         res.redirect('/');
       })
   },
+  delete: function (req, res) {
+    knex('item').where('id', req.params.id)
+      .del()
+      .then(() => {
+        res.redirect('/')
+      })
+  },
 }

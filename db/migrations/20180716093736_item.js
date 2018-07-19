@@ -8,6 +8,7 @@ exports.up = function (knex, Promise) {
         table.boolean('price_negotiable')
             .defaultTo('false');
         table.text('img_url')
+        table.string('duration')
         table.integer('user_id')
             .notNullable()
             .references('id')
