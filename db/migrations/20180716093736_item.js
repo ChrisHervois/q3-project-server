@@ -9,6 +9,7 @@ exports.up = function (knex, Promise) {
             .defaultTo('false');
         table.text('img_url')
         table.string('duration')
+            .defaultTo('Day')
         table.integer('user_id')
             .notNullable()
             .references('id')
